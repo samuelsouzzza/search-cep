@@ -54,6 +54,11 @@ form {
   width: 30%;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
 form input, form button {
   display: block;
   background-color: #fff;

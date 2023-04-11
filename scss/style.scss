@@ -36,6 +36,9 @@ table{
 form{
     width: 30%;
     text-align: center;
+    @media only screen and (max-width: 600px){
+        width: 90%;
+    }
     input, button{
         display: block;
         background-color: #fff;
