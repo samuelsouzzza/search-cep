@@ -12,7 +12,6 @@ function buscarDados(){
     fetch(`https://viacep.com.br/ws/${cepDigitado}/json/`)
     .then(response => response.json())
     .then(cep =>{
-        console.log(cep);
         linhaCep.innerText = cep.cep;
         linhaLocalidade.innerText = cep.localidade;
         linhaUf.innerText = cep.uf;
@@ -26,9 +25,14 @@ function buscarDados(){
                 txtCep.classList.remove('error');
                 spanErros.classList.remove('ativo');
             },5000);
-        });
-             
+        }); 
     })
 }
 
 btnBuscar.addEventListener('click', buscarDados);
+document.addEventListener('keypress', (e)=>{
+    if(e.key == "Enter"){
+        e.preventDefault();
+        buscarDados();
+    }
+})
