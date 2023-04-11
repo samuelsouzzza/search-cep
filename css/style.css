@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+table {
+  margin: 1%;
+  padding: 1%;
+  width: 50%;
+  height: 60%;
+  -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.185);
+          box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.185);
+}
+table tr {
+  background-color: #fff;
+}
+table tr td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1568627451);
+}
+
+form {
+  width: 60%;
+  text-align: center;
+}
+form input {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1568627451);
+  width: 60%;
+  height: 50px;
+  padding: 1%;
+  font-size: 1rem;
+  text-align: center;
+  outline: 0;
+}
+form input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.1568627451);
+}
+form input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.1568627451);
+}
+form input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.1568627451);
+}
+form input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.1568627451);
+}
+form input::placeholder {
+  color: rgba(0, 0, 0, 0.1568627451);
+}
+form input[type=submit] {
+  width: 20%;
+  cursor: pointer;
+  color: #0000ff;
+  border-color: #0000ff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+form input[type=submit]:hover {
+  color: #fff;
+  background-color: #0000ff;
+}
