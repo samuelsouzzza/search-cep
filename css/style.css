@@ -44,12 +44,17 @@ table tr {
 table tr td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1568627451);
 }
+@media only screen and (max-width: 600px) {
+  table {
+    width: 90%;
+  }
+}
 
 form {
   width: 30%;
   text-align: center;
 }
-form input {
+form input, form button {
   display: block;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1568627451);
@@ -62,22 +67,22 @@ form input {
   text-align: center;
   outline: 0;
 }
-form input::-webkit-input-placeholder {
+form input::-webkit-input-placeholder, form button::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.1568627451);
 }
-form input::-moz-placeholder {
+form input::-moz-placeholder, form button::-moz-placeholder {
   color: rgba(0, 0, 0, 0.1568627451);
 }
-form input:-ms-input-placeholder {
+form input:-ms-input-placeholder, form button:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.1568627451);
 }
-form input::-ms-input-placeholder {
+form input::-ms-input-placeholder, form button::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.1568627451);
 }
-form input::placeholder {
+form input::placeholder, form button::placeholder {
   color: rgba(0, 0, 0, 0.1568627451);
 }
-form input[type=button] {
+form button {
   width: 100%;
   cursor: pointer;
   color: #0000ff;
@@ -85,7 +90,10 @@ form input[type=button] {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-form input[type=button]:hover {
+form button i {
+  margin-right: 1%;
+}
+form button:hover {
   color: #fff;
   background-color: #0000ff;
 }

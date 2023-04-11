@@ -29,11 +29,14 @@ table{
             border-bottom: 1px solid #00000028;
         }
     }
+    @media only screen and (max-width: 600px){
+        width: 90%;
+    }
 }
 form{
     width: 30%;
     text-align: center;
-    input{
+    input, button{
         display: block;
         background-color: #fff;
         border: 1px solid #00000028;
@@ -49,12 +52,15 @@ form{
             color: #00000028;
         }
     }
-    input[type='button']{
+    button{
         width: 100%;
         cursor: pointer;
         color: #0000ff;
         border-color: #0000ff;
         transition: .3s;
+        i{
+            margin-right: 1%;
+        }
         &:hover{
             color: #fff;
             background-color: #0000ff;
