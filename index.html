@@ -9,10 +9,14 @@
         <title>Buscador de CEPs</title>
     </head>
 <body>
+<h1>Buscador de CEPs</h1>
 <form>
-    <input type="text" placeholder="Busque por um CEP" data-js-txtCep>
-    <input type="button" value="Buscar dados" data-js-btnBuscar>
-</form>
+   
+        <input type="text" placeholder="Busque por um CEP" data-js-txtCep>
+        <input type="button" value="Buscar dados" data-js-btnBuscar>
+
+    </form>
+    <span data-js-msnErros class="error">O CEP digitado é inválido!</span>
 <table>
     <tr>
         <td><strong>CEP</strong></td>
@@ -31,6 +35,7 @@
         <td data-js-info="ddd">... </td>
     </tr>
 </table>
+<span>Fonte: https://viacep.com.br</span>
 <script src="js/script.js"></script>
 </body>
 </html>

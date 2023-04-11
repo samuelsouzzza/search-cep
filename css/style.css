@@ -25,6 +25,10 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+h1 {
+  color: #0000ff;
+}
+
 table {
   margin: 1%;
   padding: 1%;
@@ -46,8 +50,10 @@ form {
   text-align: center;
 }
 form input {
+  display: inline-block;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1568627451);
+  border-radius: 5px;
   width: 60%;
   height: 50px;
   padding: 1%;
@@ -81,4 +87,17 @@ form input[type=button] {
 form input[type=button]:hover {
   color: #fff;
   background-color: #0000ff;
+}
+
+span {
+  display: none;
+}
+span.ativo {
+  display: block;
+  font-style: italic;
+}
+
+.error {
+  border-color: #ff0000;
+  color: #ff0000;
 }

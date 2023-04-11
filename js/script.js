@@ -4,6 +4,7 @@ const linhaUf = document.querySelector('[data-js-info = "uf"]');
 const linhaDdd= document.querySelector('[data-js-info = "ddd"]');
 
 const txtCep = document.querySelector('[data-js-txtCep]');
+const spanErros = document.querySelector('[data-js-msnErros]');
 const btnBuscar = document.querySelector('[data-js-btnBuscar]');
 
 function buscarDados(){
@@ -16,6 +17,17 @@ function buscarDados(){
         linhaLocalidade.innerText = cep.localidade;
         linhaUf.innerText = cep.uf;
         linhaDdd.innerText = cep.ddd;
+    })
+    .catch(() => {
+        setTimeout(()=>{
+            txtCep.classList.add('error');
+            spanErros.classList.add('ativo');
+            setTimeout(()=>{
+                txtCep.classList.remove('error');
+                spanErros.classList.remove('ativo');
+            },5000);
+        });
+             
     })
 }
 
